@@ -1,0 +1,5 @@
+"2021-06-30 16:40:08 [http-nio-8083-exec-4] INFO  item -
+                request  - POST | customer | saveItem | payload : ItemDTO(id=1, item_code=ITM0003, name=Apple)
+""2021-06-30 16:40:08 [http-nio-8083-exec-4] INFO  item -
+                response - POST | customer | saveItem | success
+"

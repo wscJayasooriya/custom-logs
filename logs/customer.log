@@ -1,0 +1,5 @@
+"2021-06-30 16:40:03 [http-nio-8083-exec-1] INFO  customer -
+                request  - POST | customer | saveCustomer | payload : CustomerDTO(id=1, name=Mahesh, address=Matara, number=0779025982)
+""2021-06-30 16:40:03 [http-nio-8083-exec-1] INFO  customer -
+                response - POST | customer | saveCustomer | success
+"

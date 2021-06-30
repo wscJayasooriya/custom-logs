@@ -1,0 +1,699 @@
+"2021-06-30 14:55:32 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 2912 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 14:55:32 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 14:55:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8081 (http)
+""2021-06-30 14:55:33 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8081"]
+""2021-06-30 14:55:33 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 14:55:33 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 14:55:33 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 14:55:33 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 526 ms
+""2021-06-30 14:55:33 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8081"]
+""2021-06-30 14:55:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8081 (http) with context path ''
+""2021-06-30 14:55:33 [main] INFO  com.example.logs.LogsApplication -
+                Started LogsApplication in 1.039 seconds (JVM running for 1.591)
+""2021-06-30 15:13:25 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-06-30 15:13:25 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+""2021-06-30 15:13:25 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 1 ms
+""2021-06-30 15:15:39 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 6252 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 15:15:39 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 15:15:39 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+""2021-06-30 15:15:39 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+                
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+""2021-06-30 15:15:39 [main] ERROR o.s.boot.SpringApplication -
+                Application run failed
+"org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.example.logs.LogsApplication.main(LogsApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:610)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:217)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:160)
+	... 8 common frames omitted
+Caused by: java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.checkContextPath(AbstractServletWebServerFactory.java:138)
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.setContextPath(AbstractServletWebServerFactory.java:127)
+	at org.springframework.boot.context.properties.PropertyMapper$Source.to(PropertyMapper.java:316)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:66)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:39)
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.lambda$postProcessBeforeInitialization$0(WebServerFactoryCustomizerBeanPostProcessor.java:72)
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$null$0(LambdaSafe.java:287)
+	at org.springframework.boot.util.LambdaSafe$LambdaSafeCallback.invoke(LambdaSafe.java:159)
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$invoke$1(LambdaSafe.java:286)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1082)
+	at org.springframework.boot.util.LambdaSafe$Callbacks.invoke(LambdaSafe.java:286)
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:72)
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:58)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	... 16 common frames omitted
+"2021-06-30 15:15:51 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 8644 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 15:15:51 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 15:15:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8081 (http)
+""2021-06-30 15:15:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8081"]
+""2021-06-30 15:15:51 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 15:15:51 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 15:15:51 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 15:15:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 528 ms
+""2021-06-30 15:15:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8081"]
+""2021-06-30 15:15:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8081 (http) with context path '/api/ninja'
+""2021-06-30 15:15:51 [main] INFO  com.example.logs.LogsApplication -
+                Started LogsApplication in 1.04 seconds (JVM running for 1.563)
+""2021-06-30 15:16:02 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-06-30 15:16:02 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+""2021-06-30 15:16:02 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 1 ms
+""2021-06-30 15:16:02 [http-nio-8081-exec-1] INFO  c.e.l.controller.CustomerController -
+                request  - POST | customer | saveCustomer | payload : CustomerDTO(id=1, name=Sandun, address=Galle, number=0779025982)
+""2021-06-30 15:16:02 [http-nio-8081-exec-1] INFO  c.e.l.controller.CustomerController -
+                response - POST | customer | saveCustomer | success
+""2021-06-30 15:16:33 [http-nio-8081-exec-7] INFO  c.e.l.controller.CustomerController -
+                request  - POST | customer | saveCustomer | payload : CustomerDTO(id=1, name=Sandun, address=Galle, number=0779025982)
+""2021-06-30 15:16:33 [http-nio-8081-exec-7] INFO  c.e.l.controller.CustomerController -
+                response - POST | customer | saveCustomer | success
+""2021-06-30 15:16:54 [http-nio-8081-exec-4] INFO  c.e.l.controller.CustomerController -
+                request  - POST | customer | saveCustomer | payload : CustomerDTO(id=1, name=Sandun, address=Galle, number=0779025982)
+""2021-06-30 15:16:54 [http-nio-8081-exec-4] INFO  c.e.l.controller.CustomerController -
+                response - POST | customer | saveCustomer | success
+""2021-06-30 15:16:55 [http-nio-8081-exec-5] INFO  c.e.l.controller.CustomerController -
+                request  - POST | customer | saveCustomer | payload : CustomerDTO(id=1, name=Sandun, address=Galle, number=0779025982)
+""2021-06-30 15:16:55 [http-nio-8081-exec-5] INFO  c.e.l.controller.CustomerController -
+                response - POST | customer | saveCustomer | success
+""2021-06-30 15:21:15 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 8712 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 15:21:15 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 15:21:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8081 (http)
+""2021-06-30 15:21:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8081"]
+""2021-06-30 15:21:16 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 15:21:16 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 15:21:16 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 15:21:16 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 528 ms
+""2021-06-30 15:21:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8081"]
+""2021-06-30 15:21:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8081 (http) with context path '/api/ninja'
+""2021-06-30 15:21:16 [main] INFO  com.example.logs.LogsApplication -
+                Started LogsApplication in 1.063 seconds (JVM running for 1.611)
+""2021-06-30 15:22:03 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 14264 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 15:22:03 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 15:22:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8081 (http)
+""2021-06-30 15:22:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8081"]
+""2021-06-30 15:22:03 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 15:22:03 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 15:22:03 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 15:22:03 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 528 ms
+""2021-06-30 15:22:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8081"]
+""2021-06-30 15:22:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8081 (http) with context path '/api/ninja'
+""2021-06-30 15:22:03 [main] INFO  com.example.logs.LogsApplication -
+                Started LogsApplication in 1.028 seconds (JVM running for 1.542)
+""2021-06-30 15:22:09 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-06-30 15:22:09 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+""2021-06-30 15:22:09 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 0 ms
+""2021-06-30 15:25:26 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 9956 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 15:25:26 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 15:25:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8081 (http)
+""2021-06-30 15:25:27 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8081"]
+""2021-06-30 15:25:27 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 15:25:27 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 15:25:27 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 15:25:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 529 ms
+""2021-06-30 15:25:27 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8081"]
+""2021-06-30 15:25:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8081 (http) with context path '/api/ninja'
+""2021-06-30 15:25:27 [main] INFO  com.example.logs.LogsApplication -
+                Started LogsApplication in 1.029 seconds (JVM running for 1.57)
+""2021-06-30 15:25:42 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-06-30 15:25:42 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+""2021-06-30 15:25:42 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 1 ms
+""2021-06-30 15:26:49 [http-nio-8081-exec-5] INFO  c.e.logs.controller.ItemController -
+                request  - POST | customer | saveItem | payload : ItemDTO(id=1, item_code=ITM0001, name=Apple)
+""2021-06-30 15:26:49 [http-nio-8081-exec-5] INFO  c.e.logs.controller.ItemController -
+                response - POST | customer | saveItem | success
+""2021-06-30 15:29:12 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 5780 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 15:29:12 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 15:29:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8081 (http)
+""2021-06-30 15:29:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8081"]
+""2021-06-30 15:29:13 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 15:29:13 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 15:29:13 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 15:29:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 784 ms
+""2021-06-30 15:29:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8081"]
+""2021-06-30 15:29:14 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8081 is already in use
+""2021-06-30 15:29:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Pausing ProtocolHandler ["http-nio-8081"]
+""2021-06-30 15:29:14 [main] INFO  o.a.catalina.core.StandardService -
+                Stopping service [Tomcat]
+""2021-06-30 15:29:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Stopping ProtocolHandler ["http-nio-8081"]
+""2021-06-30 15:29:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Destroying ProtocolHandler ["http-nio-8081"]
+""2021-06-30 15:29:14 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+                
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+""2021-06-30 15:29:14 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+                
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+""2021-06-30 15:30:15 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 1592 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 15:30:15 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 15:30:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8081 (http)
+""2021-06-30 15:30:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8081"]
+""2021-06-30 15:30:16 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 15:30:16 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 15:30:16 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 15:30:16 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 751 ms
+""2021-06-30 15:30:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8081"]
+""2021-06-30 15:30:16 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8081 is already in use
+""2021-06-30 15:30:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Pausing ProtocolHandler ["http-nio-8081"]
+""2021-06-30 15:30:16 [main] INFO  o.a.catalina.core.StandardService -
+                Stopping service [Tomcat]
+""2021-06-30 15:30:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Stopping ProtocolHandler ["http-nio-8081"]
+""2021-06-30 15:30:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Destroying ProtocolHandler ["http-nio-8081"]
+""2021-06-30 15:30:16 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+                
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+""2021-06-30 15:30:16 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+                
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+""2021-06-30 15:31:01 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 5820 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 15:31:01 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 15:31:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8083 (http)
+""2021-06-30 15:31:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8083"]
+""2021-06-30 15:31:01 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 15:31:01 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 15:31:01 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 15:31:01 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 762 ms
+""2021-06-30 15:31:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8083"]
+""2021-06-30 15:31:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8083 (http) with context path '/api/ninja'
+""2021-06-30 15:31:02 [main] INFO  com.example.logs.LogsApplication -
+                Started LogsApplication in 1.485 seconds (JVM running for 2.301)
+""2021-06-30 16:07:13 [http-nio-8083-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-06-30 16:07:13 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+""2021-06-30 16:07:13 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 1 ms
+""2021-06-30 16:07:13 [http-nio-8083-exec-1] INFO  c.e.logs.controller.ItemController -
+                request  - POST | customer | saveItem | payload : ItemDTO(id=1, item_code=ITM0001, name=Apple)
+""2021-06-30 16:07:13 [http-nio-8083-exec-1] INFO  c.e.logs.controller.ItemController -
+                response - POST | customer | saveItem | success
+""2021-06-30 16:11:37 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 1436 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 16:11:37 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 16:11:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8083 (http)
+""2021-06-30 16:11:37 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:11:37 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 16:11:37 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 16:11:38 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 16:11:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 719 ms
+""2021-06-30 16:11:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:11:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8083 (http) with context path '/api/ninja'
+""2021-06-30 16:11:38 [main] INFO  com.example.logs.LogsApplication -
+                Started LogsApplication in 1.372 seconds (JVM running for 2.169)
+""2021-06-30 16:11:48 [http-nio-8083-exec-2] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-06-30 16:11:48 [http-nio-8083-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+""2021-06-30 16:11:48 [http-nio-8083-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 0 ms
+""2021-06-30 16:14:03 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 14296 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 16:14:03 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 16:14:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8083 (http)
+""2021-06-30 16:14:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:14:03 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 16:14:03 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 16:14:03 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 16:14:03 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 773 ms
+""2021-06-30 16:14:04 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:14:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8083 (http) with context path '/api/ninja'
+""2021-06-30 16:14:04 [main] INFO  com.example.logs.LogsApplication -
+                Started LogsApplication in 1.56 seconds (JVM running for 2.509)
+""2021-06-30 16:14:23 [http-nio-8083-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-06-30 16:14:23 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+""2021-06-30 16:14:23 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 1 ms
+""2021-06-30 16:15:01 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 11932 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 16:15:01 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 16:15:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8083 (http)
+""2021-06-30 16:15:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:15:02 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 16:15:02 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 16:15:02 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 16:15:02 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 858 ms
+""2021-06-30 16:15:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:15:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8083 (http) with context path '/api/ninja'
+""2021-06-30 16:15:02 [main] INFO  com.example.logs.LogsApplication -
+                Started LogsApplication in 1.731 seconds (JVM running for 2.812)
+""2021-06-30 16:15:17 [http-nio-8083-exec-4] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-06-30 16:15:17 [http-nio-8083-exec-4] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+""2021-06-30 16:15:17 [http-nio-8083-exec-4] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 1 ms
+""2021-06-30 16:15:17 [http-nio-8083-exec-4] INFO  CUSTOMER_FILE -
+                request  - POST | customer | saveCustomer | payload : CustomerDTO(id=2, name=Anuradha, address=Galle, number=0779025982)
+""2021-06-30 16:15:17 [http-nio-8083-exec-4] INFO  CUSTOMER_FILE -
+                response - POST | customer | saveCustomer | success
+""2021-06-30 16:16:36 [http-nio-8083-exec-5] INFO  CUSTOMER_FILE -
+                request  - POST | customer | saveCustomer | payload : CustomerDTO(id=3, name=Anuradha, address=Matara, number=0779025982)
+""2021-06-30 16:16:36 [http-nio-8083-exec-5] INFO  CUSTOMER_FILE -
+                response - POST | customer | saveCustomer | success
+""2021-06-30 16:19:49 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 1060 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 16:19:49 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 16:19:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8083 (http)
+""2021-06-30 16:19:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:19:50 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 16:19:50 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 16:19:50 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 16:19:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 672 ms
+""2021-06-30 16:19:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:19:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8083 (http) with context path '/api/ninja'
+""2021-06-30 16:19:50 [main] INFO  com.example.logs.LogsApplication -
+                Started LogsApplication in 1.319 seconds (JVM running for 2.106)
+""2021-06-30 16:20:05 [http-nio-8083-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-06-30 16:20:05 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+""2021-06-30 16:20:05 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 2 ms
+""2021-06-30 16:20:05 [http-nio-8083-exec-1] INFO  c.e.l.controller.CustomerController -
+                request  - POST | customer | saveCustomer | payload : CustomerDTO(id=4, name=Mahesh, address=Matara, number=0779025982)
+""2021-06-30 16:20:05 [http-nio-8083-exec-1] INFO  c.e.l.controller.CustomerController -
+                response - POST | customer | saveCustomer | success
+""2021-06-30 16:23:51 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 11584 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 16:23:51 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 16:23:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8083 (http)
+""2021-06-30 16:23:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:23:51 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 16:23:51 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 16:23:52 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 16:23:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 732 ms
+""2021-06-30 16:23:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:23:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8083 (http) with context path '/api/ninja'
+""2021-06-30 16:23:52 [main] INFO  com.example.logs.LogsApplication -
+                Started LogsApplication in 1.424 seconds (JVM running for 2.289)
+""2021-06-30 16:24:12 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 9784 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 16:24:12 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 16:24:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8083 (http)
+""2021-06-30 16:24:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:24:13 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 16:24:13 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 16:24:13 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 16:24:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 603 ms
+""2021-06-30 16:24:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:24:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8083 (http) with context path '/api/ninja'
+""2021-06-30 16:24:13 [main] INFO  com.example.logs.LogsApplication -
+                Started LogsApplication in 1.192 seconds (JVM running for 1.864)
+""2021-06-30 16:24:37 [http-nio-8083-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-06-30 16:24:37 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+""2021-06-30 16:24:37 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 1 ms
+""2021-06-30 16:24:37 [http-nio-8083-exec-1] INFO  dev -
+                request  - POST | customer | saveItem | payload : ItemDTO(id=4, item_code=ITM0002, name=Orange)
+""2021-06-30 16:24:37 [http-nio-8083-exec-1] INFO  dev -
+                response - POST | customer | saveItem | success
+""2021-06-30 16:25:55 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 12200 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 16:25:55 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 16:25:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8083 (http)
+""2021-06-30 16:25:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:25:56 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 16:25:56 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 16:25:56 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 16:25:56 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 598 ms
+""2021-06-30 16:25:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:25:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8083 (http) with context path '/api/ninja'
+""2021-06-30 16:25:56 [main] INFO  com.example.logs.LogsApplication -
+                Started LogsApplication in 1.182 seconds (JVM running for 1.86)
+""2021-06-30 16:26:07 [http-nio-8083-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-06-30 16:26:07 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+""2021-06-30 16:26:07 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 1 ms
+""2021-06-30 16:26:07 [http-nio-8083-exec-1] INFO   -
+                request  - POST | customer | saveItem | payload : ItemDTO(id=5, item_code=ITM0002, name=Orange)
+""2021-06-30 16:26:07 [http-nio-8083-exec-1] INFO   -
+                response - POST | customer | saveItem | success
+""2021-06-30 16:26:49 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 10372 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 16:26:49 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 16:26:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8083 (http)
+""2021-06-30 16:26:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:26:49 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 16:26:49 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 16:26:50 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 16:26:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 644 ms
+""2021-06-30 16:26:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:26:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8083 (http) with context path '/api/ninja'
+""2021-06-30 16:26:50 [main] INFO  com.example.logs.LogsApplication -
+                Started LogsApplication in 1.289 seconds (JVM running for 2.047)
+""2021-06-30 16:26:59 [http-nio-8083-exec-2] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-06-30 16:26:59 [http-nio-8083-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+""2021-06-30 16:26:59 [http-nio-8083-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 0 ms
+""2021-06-30 16:30:24 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 9096 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 16:30:24 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 16:30:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8083 (http)
+""2021-06-30 16:30:24 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:30:24 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 16:30:24 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 16:30:24 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 16:30:24 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 630 ms
+""2021-06-30 16:30:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:30:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8083 (http) with context path '/api/ninja'
+""2021-06-30 16:30:25 [main] INFO  com.example.logs.LogsApplication -
+                Started LogsApplication in 1.186 seconds (JVM running for 1.839)
+""2021-06-30 16:30:44 [http-nio-8083-exec-2] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-06-30 16:30:44 [http-nio-8083-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+""2021-06-30 16:30:44 [http-nio-8083-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 1 ms
+""2021-06-30 16:32:13 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 14004 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 16:32:13 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 16:32:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8083 (http)
+""2021-06-30 16:32:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:32:14 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 16:32:14 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 16:32:14 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 16:32:14 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 806 ms
+""2021-06-30 16:32:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:32:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8083 (http) with context path '/api/ninja'
+""2021-06-30 16:32:14 [main] INFO  com.example.logs.LogsApplication -
+                Started LogsApplication in 1.439 seconds (JVM running for 2.077)
+""2021-06-30 16:32:34 [http-nio-8083-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-06-30 16:32:34 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+""2021-06-30 16:32:34 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 1 ms
+""2021-06-30 16:32:34 [http-nio-8083-exec-1] INFO  charging -
+                request  - POST | customer | saveItem | payload : ItemDTO(id=8, item_code=ITM0003, name=Apple)
+""2021-06-30 16:32:34 [http-nio-8083-exec-1] INFO  charging -
+                response - POST | customer | saveItem | success
+""2021-06-30 16:33:00 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 10040 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 16:33:00 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 16:33:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8083 (http)
+""2021-06-30 16:33:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:33:01 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 16:33:01 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 16:33:01 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 16:33:01 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 988 ms
+""2021-06-30 16:33:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:33:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8083 (http) with context path '/api/ninja'
+""2021-06-30 16:33:01 [main] INFO  com.example.logs.LogsApplication -
+                Started LogsApplication in 1.796 seconds (JVM running for 2.49)
+""2021-06-30 16:33:08 [http-nio-8083-exec-2] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-06-30 16:33:08 [http-nio-8083-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+""2021-06-30 16:33:08 [http-nio-8083-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 0 ms
+""2021-06-30 16:33:08 [http-nio-8083-exec-2] INFO  charging -
+                request  - POST | customer | saveItem | payload : ItemDTO(id=10, item_code=ITM0003, name=Apple)
+""2021-06-30 16:33:08 [http-nio-8083-exec-2] INFO  charging -
+                response - POST | customer | saveItem | success
+""2021-06-30 16:39:21 [main] INFO  com.example.logs.LogsApplication -
+                Starting LogsApplication using Java 1.8.0_251 on Com-Sadun with PID 10336 (D:\My Projects\Logs\target\classes started by sadunv in D:\My Projects\Logs)
+""2021-06-30 16:39:21 [main] INFO  com.example.logs.LogsApplication -
+                No active profile set, falling back to default profiles: default
+""2021-06-30 16:39:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8083 (http)
+""2021-06-30 16:39:22 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:39:22 [main] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+""2021-06-30 16:39:22 [main] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+""2021-06-30 16:39:22 [main] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring embedded WebApplicationContext
+""2021-06-30 16:39:22 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 600 ms
+""2021-06-30 16:39:22 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8083"]
+""2021-06-30 16:39:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8083 (http) with context path '/api/ninja'
+""2021-06-30 16:39:22 [main] INFO  com.example.logs.LogsApplication -
+                Started LogsApplication in 1.208 seconds (JVM running for 1.84)
+""2021-06-30 16:40:02 [http-nio-8083-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api/ninja] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-06-30 16:40:02 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+""2021-06-30 16:40:02 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 1 ms
+""2021-06-30 16:40:03 [http-nio-8083-exec-1] INFO  customer -
+                request  - POST | customer | saveCustomer | payload : CustomerDTO(id=1, name=Mahesh, address=Matara, number=0779025982)
+""2021-06-30 16:40:03 [http-nio-8083-exec-1] INFO  customer -
+                response - POST | customer | saveCustomer | success
+""2021-06-30 16:40:08 [http-nio-8083-exec-4] INFO  item -
+                request  - POST | customer | saveItem | payload : ItemDTO(id=1, item_code=ITM0003, name=Apple)
+""2021-06-30 16:40:08 [http-nio-8083-exec-4] INFO  item -
+                response - POST | customer | saveItem | success
+"

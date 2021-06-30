@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>%d{HH:mm:ss.SSS, ${logback.timezone:-Asia/Colombo}} %-5level %logger{36} - %msg%n</Pattern>
+        </layout>
+    </appender>
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/dev.log</file>
+        <append>true</append>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/archived/dev.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>"%d{yyyy-MM-dd HH:mm:ss, ${logback.timezone:-Asia/Colombo}} [%thread] %-5level %logger{36} -
+                %msg%n"
+            </pattern>
+        </encoder>
+    </appender>
+
+    <appender name="CUSTOMER_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/customer.log</file>
+        <append>true</append>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/archived/customer.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>"%d{yyyy-MM-dd HH:mm:ss, ${logback.timezone:-Asia/Colombo}} [%thread] %-5level %logger{36} -
+                %msg%n"
+            </pattern>
+        </encoder>
+    </appender>
+    <logger name="customer" level="INFO" additivity="false">
+        <appender-ref ref="CUSTOMER_FILE"/>
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+
+    <appender name="ITEM_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/item.log</file>
+        <append>true</append>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/archived/item.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>"%d{yyyy-MM-dd HH:mm:ss, ${logback.timezone:-Asia/Colombo}} [%thread] %-5level %logger{36} -
+                %msg%n"
+            </pattern>
+        </encoder>
+    </appender>
+    <logger name="item" level="INFO" additivity="false">
+        <appender-ref ref="ITEM_FILE"/>
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+    <root level="info">
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>
